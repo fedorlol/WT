@@ -10,4 +10,4 @@ $twig = new Twig_Environment($loader, array(
 
 $books = array();
 
-echo $twig->render('replies.html', array('books' => $books));
+echo $twig->render('replies.html');
