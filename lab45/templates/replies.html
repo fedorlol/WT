@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+{% block title %}Мнения экспертов{% endblock %}
+{% block site_intro %}
+<div class="container">
+    <div class="intro__inner">
+        <h1 class="intro__title">
+            Отзывы экспертов
+        </h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block nav__link %}
+<a class="nav__link" href="index.php">На главную</a>
+{% endblock %}
+
+
+{% block main %}
+        <!--Comment-->
+        <div class="reviews" id="review">
+            <div class="container">
+                <div class="reviews__inner">
+                    <div class="reviews__photo">
+                        <img class="review__img" src="img/comment/f1.jpg">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">Коммунизм, как общественная собственность на средства производства, является наиболее выгодной и наиболее справедливой общественной формацией как с точки зрения науки политэкономии, так и с точки зрения философских трудов многочисленных философов ещё с древних времён. При коммунизме достигается максимальное равенство с социально-экономической точки зрения.</div>
+                        <div class="reviews__author">Евгений Понасенков</div>
+                    </div>
+                    <div class="reviews__photo">
+                        <img class="review__img" src="img/comment/f2.jpg">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">С диалектической точки зрения всякий предмет сначала рассматривается как простое бытие - он просто есть. Потом берется с отрицанием, и в нем рассматривается то, что его отрицает. А потом рассматривается отрицание этого отрицания. И получается возвращение к исходному бытию, но уже не как непосредственно равному самому себе, а как равному самому себе через отрицание своего отрицания.</div>
+                        <div class="reviews__author">Михаил Попов, философ, экономист, политический и общественный деятель</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+{% endblock %}

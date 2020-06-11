@@ -1,0 +1,37 @@
+
+textarea{
+    width:80%;
+    height:5em;
+}
+
+fieldset{
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+fieldset input{
+    margin-left:0px;
+    margin-right:15px;
+}
+
+input{
+    margin-left:20px;
+}
+
+@media screen and (max-width:800px){
+    fieldset{
+        width:75%;
+    }
+    fieldset input{
+        margin-right:10px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    #submitbut{
+        width:80%;
+    }
+
+}

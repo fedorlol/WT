@@ -1,0 +1,73 @@
+{% extends "index.html" %}
+
+{% block links %}
+  <link rel="stylesheet" href="css/feedback.css">
+{% endblock %}
+
+
+{% block title %}Отзыв{% endblock %}
+
+{% block site_intro %}
+<div class="container">
+    <div class="intro__inner">
+        <h1 class="intro__title">
+            Оставь отзыв о сайте, камрад!
+        </h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block nav__link %}
+<a class="nav__link" href="index.php">На главную</a>
+{% endblock %}
+
+{% block main %}
+
+    <div class="form" id="form">
+        <img src="img/ico.png">
+          <section class="col_mai">
+            <h1>Ваше мнение о предоставленной информации</h1>
+              <div id="feedbacktext">
+                  <p>
+                      Оцените нашу работу и мы устраним недостатки,<br> а достоинства сделаем еще более явными!
+                  </p>
+              </div>
+            <div id="formcontainer">
+
+                <form id="feedbackform" method="post" enctype="application/x-www-form-urlencoded" action="FeedbackForm.php">
+                    <p>
+                        <label>Адрес вашей электронной почты
+                            <input type="email" name="eMail" required>
+                        </label>
+                    </p>
+                    <fieldset>
+                        <legend>Оцените качество предоставленной информации</legend>
+                        <label>Ужасно
+                            <input type="radio" name="quality" value="theworst">
+                        </label>
+                        <label>Плохо
+                            <input type="radio" name="quality" value="bad">
+                        </label>
+                        <label>Нормально
+                            <input type="radio" name="quality" value="normal">
+                        </label>
+                        <label>Хорошо
+                            <input type="radio" name="quality" value="good">
+                        </label>
+                        <label>Отлично
+                            <input type="radio" name="quality" value="thebest">
+                        </label>
+                    </fieldset>
+                    <p>
+                        <label>Ваше мнение о сайте
+                            <textarea name="feedbacktext"></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <button class="submit">ОТПРАВИТЬ</button>
+                    </p>
+                </form>
+            </div>
+          </section>
+    </div>
+{% endblock %}

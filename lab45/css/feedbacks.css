@@ -1,0 +1,24 @@
+.FBcs {
+    font-family: Docker1;
+    color: #FF7518;
+    display:block;
+    border:5px solid #FF7518;
+}
+
+.username{
+    padding:2%;
+    font-size:1.5rem;
+}
+
+.quality{
+    float:right;
+    padding:2%;
+    font-size:1.5rem;
+    padding-top:0;
+    margin-right: 20px;
+}
+
+.Opinion{
+    padding:2%;
+    font-size:1rem;
+}
