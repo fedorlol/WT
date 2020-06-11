@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block title %}Вход{% endblock %}
+{% block site_intro %}
+<div class="container">
+    <div class="intro__inner">
+        <h1 class="intro__title">
+          Входи на сайт, товарищ!
+        </h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block nav__link %}
+<a class="nav__link" href="index.php">На главную</a>
+{% endblock %}
+
+{% block main %}
+<div class="form" id="form">
+    <img src="img/ico.png">
+    <form>
+        <div class="dws-input">
+        <input type ="text" name="username" placeholder="Введите логин" required>
+        </div>
+        <div class="dws-input">
+          <input type ="password" name="password" placeholder="Введите пароль" required>
+        </div>
+        <input class="submit" type ="submit" name="submit" value="ВОЙТИ"></input>
+        <br/>
+        <a href="#">Восстановить пароль</a>
+    </form>
+</div>
+{% endblock %}

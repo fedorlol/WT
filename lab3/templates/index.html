@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/star.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block links %}
+        {% endblock %}
+        <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+
+    <!--Header-->
+    <header class="header" id="header">
+        {% block site_header %}
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/logo.png">
+
+                </div>
+                <nav class="nav">
+                    {% block nav__link %}{% endblock %}
+                    <a class="nav__link" href="#">Теория и практика</a>
+                    <a class="nav__link" href="#">Наука</a>
+                    <a class="nav__link" href="replies.php">Мнения экспертов</a>
+                    <a class="nav__link" target="_blank" href="auth.php">Войти</a>
+                </nav>
+            </div>
+        </div>
+        {% endblock %}
+    </header>
+
+    <!--intro-->
+    <div class="intro">
+        {% block site_intro %}
+        {% endblock %}
+    </div>
+
+    <!--Main-->
+    {% block main %}
+    {% endblock %}
+
+    <!--Footer-->
+    <footer class="footer">
+      <nav class="footer_nav">
+        <a href="#header">
+          <img src="img/redstar.png">
+        </a>
+        <p>
+          <a class="feedback_link" href="feedback.php">Оставить отзыв</a>
+        </p>
+        <p>© Фёдор Борисюк</p>
+      </nav>
+    </footer>
+
+  </body>
+</html>
