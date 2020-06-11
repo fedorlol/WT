@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/star.png">
+        <title>Отзыв</title>
+    </head>
+    <body>
+
+
+        <!--Header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="img/logo.png">
+                    </div>
+                    <nav class="nav">
+                      <a class="nav__link" href="index.html">На главную</a>
+                      <a class="nav__link" href="#">Теория и практика</a>
+                      <a class="nav__link" href="#">Наука</a>
+                      <a class="nav__link" href="replies.html">Мнения экспертов</a>
+                      <a class="nav__link" target="_blank" href="auth.html">Войти</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--Intro-->
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h1 class="intro__title">
+                        Оставь отзыв о сайте, камрад!
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Form-->
+        <div class="form" id="form">
+            <img src="img/ico.png">
+            <form>
+              <section class="col_mai">
+                <h1>Ваше мнение о предоставленной информации</h1>
+                  <div id="feedbacktext">
+                      <p>
+                          Оцените нашу работу и мы устраним недостатки,<br> а достоинства сделаем еще более явными!
+                      </p>
+                  </div>
+                <div id="formcontainer">
+                    <form id="feedbackform" method="post" enctype="application/x-www-form-urlencoded" action="">
+                        <p>
+                            <label>Адрес вашей электронной почты
+                                <input type="email" name="eMail" required>
+                            </label>
+                        </p>
+                        <fieldset>
+                            <legend>Оцените качество предоставленной информации</legend>
+                            <label>Ужасно
+                                <input type="radio" name="quality" value="theworst">
+                            </label>
+                            <label>Плохо
+                                <input type="radio" name="quality" value="bad">
+                            </label>
+                            <label>Нормально
+                                <input type="radio" name="quality" value="normal">
+                            </label>
+                            <label>Хорошо
+                                <input type="radio" name="quality" value="good">
+                            </label>
+                            <label>Отлично
+                                <input type="radio" name="quality" value="thebest">
+                            </label>
+                        </fieldset>
+                        <p>
+                            <label>Ваше мнение о сайте
+                                <textarea name="feedbacktext"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <button class="submit">ОТПРАВИТЬ</button>
+                        </p>
+                    </form>
+                </div>
+              </section>
+            </form>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+          <nav class="footer_nav">
+            <a href="#header">
+              <img src="img/redstar.png">
+            </a>
+            <p>
+              <a class="feedback_link" href="feedback.html">Оставить отзыв</a>
+            </p>
+            <p>© Фёдор Борисюк</p>
+          </nav>
+        </footer>
+
+    </body>
+</html>
