@@ -1,0 +1,5 @@
+ErrorDocument 404 /index.php
+
+<Files "forbidden-403.php">
+    Require all denied
+</Files>
