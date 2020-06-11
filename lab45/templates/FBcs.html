@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+
+{% block links %}
+  <link rel="stylesheet" href="css/feedbacks.css">
+{% endblock %}
+
+
+{% block site_intro %}
+<div class="container">
+    <div class="intro__inner">
+        <h1 class="intro__title">
+            Отзывы товарищей
+        </h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block nav__link %}
+<a class="nav__link" href="index.php">На главную</a>
+{% endblock %}
+
+{% block title %}Отзывы{% endblock %}
+{% block main %}
+    {% for result in results %}
+    <div class="FBcs">
+        <span class="username">{{ result[0] }}</span>
+        <span class="quality">
+            {% if result[1]=="theworst" %}
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+            {% endif %}
+            {% if result[1]=="bad" %}
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+            {% endif %}
+            {% if result[1]=="normal" %}
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg1.png" />
+              <img src="img/feedback/fbimg1.png" />
+            {% endif %}
+            {% if result[1]=="good" %}
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg1.png" />
+            {% endif %}
+            {% if result[1]=="thebest" %}
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+              <img src="img/feedback/fbimg2.png" />
+            {% endif %}
+        </span>
+        <br>
+        <p class="Opinion">
+          <blockquote>{{ result[2] }}</blockquote>
+        </p>
+    </div>
+
+    {% endfor %}
+{% endblock %}

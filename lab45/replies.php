@@ -8,6 +8,8 @@ $twig = new Twig_Environment($loader, array(
     'auto_reload' => true
 ));
 
-$books = array();
+$table = "reviews";
+include 'pdoGet.php';
+$res_reviews = $result;
 
-echo $twig->render('replies.html');
+echo $twig->render('replies.html', ['res_reviews'=>$res_reviews]);

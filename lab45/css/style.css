@@ -253,14 +253,29 @@ p {
 .reviews__inner {
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 .reviews__photo {
   width: 50%;
   height: 500px;
   position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .reviews__inner {
+    display: block;
+  }
+  .reviews__photo {
+    margin-top: 12rem;
+    width: 10%;
+    height: 100px;
+    margin-bottom: 12rem;
+    margin-left: 50rem;
+  }
+  .reviews__content {
+    width: 50%;
+    padding-left: 80px;
+  }
 }
 
 .reviews__content {

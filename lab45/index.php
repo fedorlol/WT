@@ -9,6 +9,12 @@ $twig = new Twig_Environment($loader, array(
     'auto_reload' => true
 ));
 
-$books = array();
+$table = "features";
+include 'pdoGet.php';
+$res_features = $result;
 
-echo $twig->render('FirstPage.html');
+$table = "team";
+include 'pdoGet.php';
+$res_team = $result;
+
+echo $twig->render('FirstPage.html',['res_features'=>$res_features, 'res_team'=>$res_team]);

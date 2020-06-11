@@ -8,6 +8,4 @@ $twig = new Twig_Environment($loader, array(
     'auto_reload' => true
 ));
 
-$books = array();
-
 echo $twig->render('feedback.html');
